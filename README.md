@@ -1,4 +1,4 @@
-# componente-desafio
+# component-challenge
 
 ## Project setup
 ```

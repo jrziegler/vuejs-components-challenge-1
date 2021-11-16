@@ -1,22 +1,16 @@
 <template>
-    <v-content>
-      <v-carousel>
-        <v-carousel-item
-            v-for="(item,i) in fotos"
-            :key="i"
-            :src="item.src"></v-carousel-item>
-      </v-carousel>
-    </v-content>
+    <v-carousel>
+    <v-carousel-item
+        v-for="(item,i) in fotos"
+        :key="i"
+        :src="item.src"></v-carousel-item>
+    </v-carousel>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      itensMenu: [
-        {title: 'Start', icon: 'mdi-view-dashboard'},
-        {title: 'About', icon: 'mdi-forum'}
-      ],
       fotos: [
         {src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'},
         {src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'},
@@ -27,7 +21,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>
